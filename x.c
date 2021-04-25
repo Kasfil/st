@@ -102,11 +102,7 @@ typedef struct {
 	Window win;
 	Drawable buf;
 	GlyphFontSpec *specbuf; /* font spec buffer used for rendering */
-<<<<<<< ours
-	Atom xembed, wmdeletewin, netwmname, netwmiconname, netwmpid;
-=======
-	Atom xembed, wmdeletewin, netwmname, netwmicon, netwmpid;
->>>>>>> theirs
+	Atom xembed, wmdeletewin, netwmiconname, netwmname, netwmicon, netwmpid;
 	struct {
 		XIM xim;
 		XIC xic;
@@ -1258,10 +1254,6 @@ xinit(int w, int h)
 	xloadcols();
 
 	/* adjust fixed window geometry */
-<<<<<<< ours
-<<<<<<< ours
-=======
->>>>>>> theirs
 	switch (geometry) {
 	case CellGeometry:
 		win.w = 2 * borderpx + w * win.cw;
@@ -1272,13 +1264,8 @@ xinit(int w, int h)
 		win.h = h;
 		break;
 	}
-<<<<<<< ours
-=======
 	win.w = 2 * win.hborderpx + 2 * borderpx + cols * win.cw;
 	win.h = 2 * win.vborderpx + 2 * borderpx + rows * win.ch;
->>>>>>> theirs
-=======
->>>>>>> theirs
 	if (xw.gm & XNegative)
 		xw.l += DisplayWidth(xw.dpy, xw.scr) - win.w - 2;
 	if (xw.gm & YNegative)
