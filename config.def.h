@@ -9,7 +9,6 @@ static char *font = "JetBrains Mono:pixelsize=14:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
     "JetBrainsMono Nerd Font:pixelsize=14:antialias=true:autohint=true",
-    "Noto Color Emoji:pixelsize=14:antialias=true:autohint=true",
 };
 
 static int borderpx = 2;
@@ -79,7 +78,7 @@ static unsigned int cursorthickness = 2;
  *    Bold affects lines thickness if boxdraw_bold is not 0. Italic is ignored.
  * 0: disable (render all U25XX glyphs normally from the font).
  */
-const int boxdraw = 1;
+const int boxdraw = 0;
 const int boxdraw_bold = 0;
 
 /* braille (U28XX):  1: render as adjacent "pixels",  0: use font */
@@ -114,7 +113,7 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
-    "#3B4252",
+    "#2E3440",
     "#BF616A",
     "#A3BE8C",
     "#EBCB8B",
@@ -137,7 +136,7 @@ static const char *colorname[] = {
 
     /* more colors can be added after 255 to use with DefaultXX */
     "#D8DEE9",
-    "#2E3440",
+    "#3B4252",
 };
 
 
